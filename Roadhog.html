@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="巨匠机器人是业内领先的产品制造商和系统集成商，经营范围从移动机器人到多轴机械臂以及非标项目定制服务 。">
+    <meta name="keywords" content="巨匠机器人,ROS机器人,深圳巨匠机器人,人工智能,SLAM导航,机器学习,边缘计算,冷色调的夏天">
+    <meta charset="utf-8">
+
+    <title>巨匠机器人: 让做机器人变得简单！</title>
+    <link rel="shortcut icon" href="static/images/favicon.ico">
+    <link rel="bookmark" href="static/images/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="static/css/merged-9fc0b0e12fb1f1f64b50c67a7fe11615-min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="static/css/layout-default.css" media="all">
+    <link rel="stylesheet" type="text/css" href="static/css/slick.css" media="all">
+    <link rel="stylesheet" type="text/css" href="static/css/productconfigurator.css" media="all">
+    <link rel="stylesheet" type="text/css" href="static/css/merged-8f5790dcd0b4a57a051d054dc8d5f5cc-min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="static/css/product.css" media="all">
+    <link rel="stylesheet" type="text/css" href="static/dist/css/lightbox.min.css">
+    <!--响应式框架-->
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap-grid.min.css" />
+    <!--CSS RESET-->
+
+    <!--图标库-->
+    <link rel="stylesheet" href="https://www.jq22.com/jquery/font-awesome.4.7.0.css">
+
+    <!--核心样式-->
+    <link rel="stylesheet" type="text/css" href="static/css/lstyle.css">
+    <style>
+        .example-image img {
+            margin-bottom: 20px;
+            cursor: pointer;
+            /*光标放在图片上的形状（一只手）*/
+        }
+        
+        .example-image:hover img {
+            /*伪类 :hover 鼠标滑过之后给img 添加动画名称,1s表示所有效果在1s以内完成*/
+            animation: run 1s;
+        }
+        /*创建动画*/
+        
+        @keyframes run {
+            /*创建动画帧关键字 动画名称 run*/
+            0% {
+                transform: scale(0.8);
+            }
+            25% {
+                transform: scale(1.2);
+            }
+            50% {
+                transform: scale(1);
+            }
+            70% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+    <!-- 头部js加载开始 -->
+    <script src="static/js/merged-fe0d10ae492542baa39791caf147e1d4-min.js" type="text/javascript"></script>
+    <script src="static/js/merged-a28fff5381f31f749fd1776d14dc6b9b-min.js" type="text/javascript"></script>
+    <script src="static/js/slick.js" type="text/javascript"></script>
+    <script src="static/js/gallerySlider.js" type="text/javascript"></script>
+    <script src="static/js/productconfigurator.js" type="text/javascript"></script>
+    <script type="application/javascript" src="static/js/main.js" id="hPhSnUJah"></script>
+    <script type="application/javascript" src="static/js/uc-block.bundle.js"></script>
+    <link rel="shortcut icon" href="static/images/favicon.ico">
+    <link rel="bookmark" href="static/images/favicon.ico">
+    <!-- Google Tag Manager -->
+    <script type="text/plain" data-usercentrics="Google Tag Manager">
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-P5XVBM2');
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta name="robots" content="follow,index">
+    <script>
+        function gaOptout() {
+            var disableStr = 'ga-disable-UA-34414288-2';
+            document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+            window[disableStr] = true;
+        }
+    </script>
+    <!-- Google Analytics -->
+    <script type="text/plain" data-usercentrics="Google Analytics">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-34414288-2', 'auto'); ga('send', 'pageview'); </script>
+    <!-- <script type="text/javascript">
+        window.onload = function() {
+            var odiv = document.getElementById('div1');
+            var oul = odiv.getElementsByTagName('ul')[0];
+            var ali = oul.getElementsByTagName('li');
+            var spa = -2;
+            oul.innerHTML = oul.innerHTML + oul.innerHTML;
+            oul.style.width = ali[0].offsetWidth * ali.length + 'px';
+
+            function move() {
+                if (oul.offsetLeft < -oul.offsetWidth / 2) {
+                    oul.style.left = '0';
+                }
+                if (oul.offsetLeft > 0) {
+                    oul.style.left = -oul.offsetWidth / 2 + 'px'
+                }
+                oul.style.left = oul.offsetLeft + spa + 'px';
+            }
+            var timer = setInterval(move, 30)
+
+            odiv.onmousemove = function() {
+                clearInterval(timer);
+            }
+            odiv.onmouseout = function() {
+                timer = setInterval(move, 30)
+            };
+        }
+    </script> -->
+    <script src="./static/js/info.js"></script>
+    <!-- 头部js加载结束 -->
+</head>
+
+
+<body>
+    <div id="page--container">
+        <div id="page">
+            <!-- 导航开始 -->
+            <div id="navigation"></div>
+            <script>
+                $("#navigation").load("header.html");
+            </script>
+            <!-- 导航结束 -->
+
+            <!-- 面包屑开始 -->
+            <div class="menu-breadcrumb">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <ul class="menu-breadcrumb breadcrumbs">
+                                <li>
+                                    当前位置</li>
+                                <li>
+                                    <a href="mobile-robots.html">
+                                        科研教学</a>
+                                </li>
+                                <li>
+                                    <a href="mobile-robots.html">
+                                        移动机器人</a>
+                                </li>
+                                <li>
+                                    <a href="ravelle.html">
+                                        路霸</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 面包屑结束 -->
+
+            <!-- 正文开始 -->
+            <div id="page--content">
+                <!-- banner开始 -->
+                <div class="page--header container-fluid bg-white">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-7">
+                                <h1>
+                                    产品概述</h1>
+                                <div class="page--header-text">
+                                    <p>
+                                        路霸（Roadhog）是一款专为室外环境设计的履带式移动机器人底盘，本产品安装多个避震器结台独特的撞击吸能设计，可有效减少地形冲击，具有良好的通过性能及越野性能， 可广泛应用于
+                                        <a target="_blank" style="color: #ff6e00;">侦查</a>、<a target="_blank" style="color: #ff6e00;">巡检</a>、<a target="_blank" style="color: #ff6e00;">勘探</a>、<a target="_blank" style="color: #ff6e00;">消防</a>等复杂环境下的机器人移动解决方案。
+                                    </p>
+
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5">
+                                <img src="static/picture/Roadhog.png" width="500" height="500" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- banner结束 -->
+
+                <!-- 正文开始 -->
+                <main class="content-host">
+                    <div id="c261" class="frame frame-default frame-type-gridelements_pi1 frame-layout-0">
+                        <a id="c634">
+                        </a>
+                        <div class="ce-grid" data-grid-type="Container_100">
+                            <div class="content-host">
+                                <div class="content-box" style="background-color: #dcdcdc">
+                                    <div class="container">
+                                        <div id="c262" class="frame frame-default frame-type-textmedia frame-layout-0 frame-space-before-extra-small frame-space-after-extra-small">
+                                            <a id="c632">
+                                            </a>
+                                            <div class="text-media row">
+                                                <div class="col-12 col-md-4 order-first">
+                                                </div>
+                                                <div class="col-12 pb-3 pb-md-0 ">
+                                                    <div class="ce-bodytext">
+                                                        <header>
+                                                            <h2 class="ce-headline ce-headline-design-11">
+                                                                技术特点</h2>
+                                                        </header>
+                                                        <ul>
+                                                            <li>
+                                                                采用履带式载体机构设计，负载能力大，越障能力强，能够进行大角度爬坡越障，适应复杂环境和地形<br> &nbsp;
+                                                            </li>
+                                                            <li>
+                                                                本体采用耐高温、防爆、防水设计，满足复杂工况需要
+                                                                <br> &nbsp;
+                                                            </li>
+                                                            <li>
+                                                                可加载移动式中继通讯装置，抗干扰性强、移动方便、 通讯距离远<br> &nbsp;
+                                                            </li>
+                                                            <li>
+                                                                可加载高清无线图传系统，实现视距、非视距远程实时视频监控，辅助机器人运动和云台遥控<br> &nbsp;
+                                                            </li>
+                                                            <strong style="font-size: 20px;">......</strong>
+                                                        </ul>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div id="c1266" class="frame frame-default frame-type-header frame-layout-0">
+                            <a id="c1273">
+                            </a>
+                            <header>
+                                <h2 class="ce-headline ce-headline-design-11">
+                                    性能参数</h2>
+                            </header>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div id="c264" class="frame frame-default frame-type-gridelements_pi1 frame-layout-0">
+                            <a id="c638">
+                            </a>
+                            <div class="ce-grid" data-grid-type="Container_50-50">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div id="c265" class="frame frame-default frame-type-textmedia frame-layout-0">
+                                            <a id="c637">
+                                            </a>
+                                            <div class="text-media row">
+                                                <div class="col-12 col-md-4 order-first">
+                                                </div>
+                                                <div class="col-12 pb-3 pb-md-0 ">
+                                                    <div class="ce-bodytext">
+
+                                                        <p>
+                                                            <strong>
+                                                                自重</strong>
+                                                            <br> 95KG
+                                                        </p>
+                                                        <p>
+                                                            <strong>
+                                                                额定载重</strong>
+                                                            <br> 100KG
+                                                        </p>
+                                                        <p>
+                                                            <strong>
+                                                                几何尺寸</strong>
+                                                            <br> 1000*700*400（mm）
+                                                        </p>
+                                                        <p>
+                                                            <strong>
+                                                                电机</strong>
+                                                            <br> 48V直流无刷电机
+                                                        </p>
+                                                        <p>
+                                                            <strong>
+                                                                电池</strong>
+                                                            <br> 标配48V30AH三元锂电池
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div id="c266" class="frame frame-default frame-type-textmedia frame-layout-0">
+                                            <a id="c636">
+                                            </a>
+                                            <div class="text-media row">
+                                                <div class="col-12 col-md-4 order-first">
+                                                </div>
+                                                <div class="col-12 pb-3 pb-md-0 ">
+                                                    <div class="ce-bodytext">
+
+                                                        <p>
+                                                            <strong>
+                                                                运行速度</strong>
+                                                            <br> 1.25m/s
+                                                        </p>
+                                                        <p>
+                                                            <strong>
+                                                                额定功率</strong>
+                                                            <br> 750W*2
+                                                        </p>
+                                                        <p>
+                                                            <strong>
+                                                                整车额定扭矩</strong>
+                                                            <br> 72N.m
+                                                        </p>
+                                                        <p>
+                                                            <strong>
+                                                                表面处理</strong>
+                                                            <br> 喷塑、烤漆
+                                                        </p>
+
+                                                        <p>
+                                                            &nbsp;</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <hr />
+                        <div id="c263" class="frame frame-default frame-type-textmedia frame-layout-0">
+                            <a id="c635">
+                            </a>
+                            <header>
+                                <h2 class="ce-headline ce-headline-design-11">
+                                    几何尺寸</h2>
+                            </header>
+                            <div class="text-media row">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-12 order-first">
+                                            <div class="ce-gallery" data-ce-columns="1" data-ce-images="1">
+                                                <div class="row justify-content-start">
+                                                    <div class="col-auto">
+                                                        <figure class="image">
+                                                            <!-- <a href="static/picture/Roadhog-dimensional-drawing.png" target="_blank" class="lightbox tet" rel="alternate">
+                                                                <img class="image-embed-item" src="static/picture/Roadhog-dimensional-drawing.png" width="600" height="226" alt="">
+                                                            </a> -->
+                                                            <a class="example-image-link" href="static/picture/Roadhog-dimensional-drawing.png" data-lightbox="example-2" data-title="路霸-几何尺寸图">
+                                                                <img class="example-image" id="ii" src="static/picture/Roadhog-dimensional-drawing.png" width="700" height="226" alt="image-1" />
+                                                            </a>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <hr />
+                    </div>
+                    <div class="container">
+                        <div id="c1280" class="frame frame-default frame-type-header frame-layout-0">
+                            <a id="c1293">
+                            </a>
+                            <header>
+                                <h2 class="ce-headline ce-headline-design-11">
+                                    视频&图片 </h2>
+                            </header>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div id="c281" class="frame frame-default frame-type-textmedia frame-layout-0">
+                            <a id="c642">
+                            </a>
+                            <div class="text-media row">
+                                <div class="col-12 pb-3">
+                                    <div class="ce-bodytext">
+
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-12 order-first">
+                                            <div class="ce-gallery" data-ce-columns="1" data-ce-images="1">
+                                                <div class="row justify-content-start">
+                                                    <div class="col-auto">
+                                                        <figure class="video">
+                                                            <div class="video-embed">
+                                                                <video width="100%" height="100%" controls>
+                                                                    <source src="static/video/lb.mp4" type="video/mp4">
+                                                                </video>
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="container">
+<div id="c282" class="frame frame-ruler-after frame-type-textmedia frame-layout-0">
+<a id="c643">
+</a>
+<div class="text-media row">
+<div class="col-12">
+<div class="row">
+<div class="col-12 order-first">
+<div class="ce-gallery" data-ce-columns="3" data-ce-images="3">
+<div class="row">
+<div class="col">
+<div class="gallery-slider">
+<div class="gallery-column">
+<figure class="image">
+<a href="./static/picture/Roadhog1.jpg" target="_blank" class="lightbox tet" rel="alternate">
+<img class="image-embed-item" src="./static/picture/Roadhog1.jpg" width="400" height="300" alt="">
+</a>
+</figure>
+</div>
+<div class="gallery-column">
+<figure class="image">
+<a href="./static/picture/Roadhog2.jpg" target="_blank" class="lightbox tet" rel="alternate">
+<img class="image-embed-item" src="./static/picture/Roadhog2.jpg" width="400" height="300" alt="">
+</a>
+</figure>
+</div>
+<div class="gallery-column">
+<figure class="image">
+<a href="./static/picture/Roadhog3.jpg" target="_blank" class="lightbox tet" rel="alternate">
+<img class="image-embed-item" src="./static/picture/Roadhog3.jpg" width="400" height="250" alt="">
+</a>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+ jQuery(document).ready(function () { initGallerySlider(3); }) </script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div> -->
+
+                    <!-- <div id="div1">
+                        <ul>
+                            <li>
+                                <a href="./static/picture/Roadhog1.png" target="_blank" class="lightbox tet" rel="alternate">
+                                    <div class="im"><img src="./static/picture/Roadhog1.png" /></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./static/picture/Roadhog2.png" target="_blank" class="lightbox tet" rel="alternate">
+                                    <div class="im"><img src="./static/picture/Roadhog2.png" /></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./static/picture/Roadhog3.png" target="_blank" class="lightbox tet" rel="alternate">
+                                    <div class="im"><img src="./static/picture/Roadhog3.png" /></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> -->
+
+
+                    <div class="demo">
+                        <div class="container">
+                            <!-- <a class="example-image-link" href="static/picture/ravelle-dimensional-drawing.png" data-lightbox="example-2" data-title="路霸-几何尺寸图">
+                                <img class="example-image" src="static/picture/ravelle-dimensional-drawing.png" width="700" height="226" alt="image-1" />
+                            </a> -->
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="box">
+                                        <img src="static/pic/lb1.png">
+                                        <div class="box-content">
+                                            <h3 class="title">路霸</h3>
+                                            <span class="post">花草中的路霸</span>
+                                        </div>
+                                        <ul class="icon">
+                                            <li><a class="example-image-link" href="static/pic/lb1.png" data-lightbox="example-2" data-title="花草中的路霸"><i class="fa fa-search"></i></a></li>
+                                            <li><a href="https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-21924167964.9.4eef21eaPqw2LG&id=611098652847"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="box">
+                                        <img src="static/pic/lb2.png">
+                                        <div class="box-content">
+                                            <h3 class="title">路霸</h3>
+                                            <span class="post">路霸驮着一台无人机</span>
+                                        </div>
+                                        <ul class="icon">
+                                            <li><a class="example-image-link" href="static/pic/lb2.png" data-lightbox="example-2" data-title="路霸驮着一台无人机"><i class="fa fa-search"></i></a></li>
+                                            <li><a href="https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-21924167964.9.4eef21eaPqw2LG&id=611098652847"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="box">
+                                        <img src="static/pic/lb3.png">
+                                        <div class="box-content">
+                                            <h3 class="title">路霸</h3>
+                                            <span class="post">大家与路霸的合影</span>
+                                        </div>
+                                        <ul class="icon">
+                                            <li><a class="example-image-link" href="static/pic/lb3.png" data-lightbox="example-2" data-title="大家与路霸的合影"><i class="fa fa-search"></i></a></li>
+                                            <li><a href="https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-21924167964.9.4eef21eaPqw2LG&id=611098652847"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <!-- 正文结束 -->
+
+            </div>
+            <!-- 正文结束 -->
+
+            <!-- 底部开始 -->
+            <div id="bottomer"></div>
+            <script>
+                $("#bottomer").load("footer.html");
+            </script>
+            <script src="static/dist/js/lightbox-plus-jquery.min.js"></script>
+            <!-- 底部结束 -->
+        </div>
+    </div>
+</body>
+
+</html>

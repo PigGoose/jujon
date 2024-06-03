@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="巨匠机器人是业内领先的产品制造商和系统集成商，经营范围从移动机器人到多轴机械臂以及非标项目定制服务 。">
+    <meta name="keywords" content="巨匠机器人,ROS机器人,深圳巨匠机器人,人工智能,SLAM导航,机器学习,边缘计算 ,冷色调的夏天">
+    <meta charset="utf-8">
+
+    <title>巨匠机器人: 让做机器人变得简单！</title>
+    <link rel="shortcut icon" href="static/images/favicon.ico">
+    <link rel="bookmark" href="static/images/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="static/css/merged-9fc0b0e12fb1f1f64b50c67a7fe11615-min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="static/css/layout-default.css" media="all">
+    <link rel="stylesheet" type="text/css" href="static/css/slick.css" media="all">
+    <link rel="stylesheet" type="text/css" href="static/css/productconfigurator.css" media="all">
+    <link rel="stylesheet" type="text/css" href="static/css/merged-8f5790dcd0b4a57a051d054dc8d5f5cc-min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="static/css/product.css" media="all">
+    <link rel="stylesheet" type="text/css" href="static/dist/css/lightbox.min.css">
+    <!--响应式框架-->
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap-grid.min.css" />
+    <!--CSS RESET-->
+
+    <!--图标库-->
+    <link rel="stylesheet" href="https://www.jq22.com/jquery/font-awesome.4.7.0.css">
+
+    <!--核心样式-->
+    <link rel="stylesheet" type="text/css" href="static/css/lstyle.css">
+    <style>
+        .example-image img {
+            margin-bottom: 20px;
+            cursor: pointer;
+            /*光标放在图片上的形状（一只手）*/
+        }
+        
+        .example-image:hover img {
+            /*伪类 :hover 鼠标滑过之后给img 添加动画名称,1s表示所有效果在1s以内完成*/
+            animation: run 1s;
+        }
+        /*创建动画*/
+        
+        @keyframes run {
+            /*创建动画帧关键字 动画名称 run*/
+            0% {
+                transform: scale(0.8);
+            }
+            25% {
+                transform: scale(1.2);
+            }
+            50% {
+                transform: scale(1);
+            }
+            70% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+    <!-- 头部js加载开始 -->
+    <script src="static/js/merged-fe0d10ae492542baa39791caf147e1d4-min.js" type="text/javascript"></script>
+    <script src="static/js/merged-a28fff5381f31f749fd1776d14dc6b9b-min.js" type="text/javascript"></script>
+    <script src="static/js/slick.js" type="text/javascript"></script>
+    <script src="static/js/gallerySlider.js" type="text/javascript"></script>
+    <script src="static/js/productconfigurator.js" type="text/javascript"></script>
+    <script type="application/javascript" src="static/js/main.js" id="hPhSnUJah"></script>
+    <script type="application/javascript" src="static/js/uc-block.bundle.js"></script>
+    <link rel="shortcut icon" href="static/images/favicon.ico">
+    <link rel="bookmark" href="static/images/favicon.ico">
+    <!-- Google Tag Manager -->
+    <script type="text/plain" data-usercentrics="Google Tag Manager">
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-P5XVBM2');
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta name="robots" content="follow,index">
+    <script>
+        function gaOptout() {
+            var disableStr = 'ga-disable-UA-34414288-2';
+            document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+            window[disableStr] = true;
+        }
+    </script>
+    <!-- Google Analytics -->
+    <script type="text/plain" data-usercentrics="Google Analytics">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-34414288-2', 'auto'); ga('send', 'pageview'); </script>
+    <!-- <script type="text/javascript">
+        window.onload = function() {
+            var odiv = document.getElementById('div1');
+            var oul = odiv.getElementsByTagName('ul')[0];
+            var ali = oul.getElementsByTagName('li');
+            var spa = -2;
+            oul.innerHTML = oul.innerHTML + oul.innerHTML;
+            oul.style.width = ali[0].offsetWidth * ali.length + 'px';
+
+            function move() {
+                if (oul.offsetLeft < -oul.offsetWidth / 2) {
+                    oul.style.left = '0';
+                }
+                if (oul.offsetLeft > 0) {
+                    oul.style.left = -oul.offsetWidth / 2 + 'px'
+                }
+                oul.style.left = oul.offsetLeft + spa + 'px';
+            }
+            var timer = setInterval(move, 30)
+
+            odiv.onmousemove = function() {
+                clearInterval(timer);
+            }
+            odiv.onmouseout = function() {
+                timer = setInterval(move, 30)
+            };
+        }
+    </script> -->
+    <script src="./static/js/info.js"></script>
+    <!-- 头部js加载结束 -->
+</head>
+
+
+<body>
+    <div id="page--container">
+        <div id="page">
+            <!-- 导航开始 -->
+            <div id="navigation"></div>
+            <script>
+                $("#navigation").load("header.html");
+            </script>
+            <!-- 导航结束 -->
+
+            <!-- 面包屑开始 -->
+            <div class="menu-breadcrumb">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <ul class="menu-breadcrumb breadcrumbs">
+                                <li>
+                                    当前位置</li>
+                                <li>
+                                    <a href="application-epi-robots.html">
+                                        行业应用</a>
+                                </li>
+                                <li>
+                                    <a href="application-epi-robots.html">
+                                        电力巡检机器人</a>
+                                </li>
+                                <li>
+                                    <a href="dl300.html">
+                                        电力巡检机器人（EPI300）</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 面包屑结束 -->
+
+            <!-- 正文开始 -->
+            <div id="page--content">
+                <div class="page--header container-fluid bg-white">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-7">
+                                <h1>
+                                    产品概述</h1>
+                                <div class="page--header-text">
+                                    <p>
+                                        随着电网建设的越来越完善，供电质量得到了极大的改善，随之而来的是变电、配电的数量越来越多，供电部门的维护压力越来越大。其管辖的变电站可达数百个，而配电房可达数万个，急需一种技术手段来减轻运维压力。
+                                    </p>
+
+                                    <p>
+                                        <a target="_blank">JUJON</a>电力巡检机器人（EPI300）可实现<a target="_blank">表计读取</a>、
+                                        <a target="_blank">指示灯识别</a>、<a target="_blank">状态识别</a>、<a target="_blank">智能分析</a>、<a target="_blank">缺陷管理</a>、<a target="_blank">闸刀和开关状态判别</a>等功能的应用，辅助运维人员开展例行巡检、特巡、重大活动保电等工作，大幅度提高变电、配电巡检效率，保障供电质量。
+                                    </p>
+
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5">
+                                <img src="static/picture/dl300.png" width="500" height="500" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <main class="content-host">
+                    <div id="c261" class="frame frame-default frame-type-gridelements_pi1 frame-layout-0">
+                        <a id="c634">
+                        </a>
+                        <div class="ce-grid" data-grid-type="Container_100">
+                            <div class="content-host">
+                                <div class="content-box" style="background-color: #dcdcdc">
+                                    <div class="container">
+                                        <div id="c262" class="frame frame-default frame-type-textmedia frame-layout-0 frame-space-before-extra-small frame-space-after-extra-small">
+                                            <a id="c632">
+                                            </a>
+                                            <div class="text-media row">
+                                                <div class="col-12 col-md-4 order-first">
+                                                </div>
+                                                <div class="col-12 pb-3 pb-md-0 ">
+                                                    <div class="ce-bodytext">
+                                                        <header>
+                                                            <h2 class="ce-headline ce-headline-design-11">
+                                                                技术特点</h2>
+                                                        </header>
+                                                        <ul>
+                                                            <li>
+                                                                <strong>无轨导航：</strong> 机器人首次进入巡检环境之前，将提前建好地图，预先设计好巡检路径，当进入巡检环境后，进行地图数据的同步，开始执行巡检任务<br> &nbsp;
+                                                            </li>
+                                                            <li>
+                                                                <strong>自动巡检：</strong> 机器人可按照每日规划的巡视检测任务，定时开始巡视检测工作。EPI300搭载有各种高精度数据采集设备，包括高清摄像机、红外热像仪、温湿度和气体传感器等，通过移动监测的方式，实现配电站所信息检测的全覆盖、全检测
+                                                                <br> &nbsp;
+                                                            </li>
+                                                            <li>
+                                                                <strong>智能识别：</strong> 可实现对表计、开关、指示灯等数值/状态的智能识别，识别结果实时显示，最终以报告形式展示，有效辅助运维人员的日常巡检工作<br> &nbsp;
+                                                            </li>
+                                                            <strong style="font-size: 20px;">......</strong>
+                                                        </ul>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div id="c1266" class="frame frame-default frame-type-header frame-layout-0">
+                            <a id="c1273">
+                            </a>
+                            <header>
+                                <h2 class="ce-headline ce-headline-design-11">
+                                    性能参数</h2>
+                            </header>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div id="c264" class="frame frame-default frame-type-gridelements_pi1 frame-layout-0">
+                            <a id="c638">
+                            </a>
+                            <div class="ce-grid" data-grid-type="Container_50-50">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div id="c265" class="frame frame-default frame-type-textmedia frame-layout-0">
+                                            <a id="c637">
+                                            </a>
+                                            <div class="text-media row">
+                                                <div class="col-12 col-md-4 order-first">
+                                                </div>
+                                                <div class="col-12 pb-3 pb-md-0 ">
+                                                    <div class="ce-bodytext">
+
+                                                        <p>
+                                                            <strong>
+                                                                重量</strong>
+                                                            <br> 80KG
+                                                        </p>
+                                                        <p>
+                                                            <strong>
+                                                                几何尺寸</strong>
+                                                            <br> 830.3*725.8*1231（mm）
+                                                        </p>
+                                                        <p>
+                                                            <strong>
+                                                                外壳材质</strong>
+                                                            <br> 普通碳钢板，喷塑处理
+                                                        </p>
+                                                        <p>
+                                                            <strong>
+                                                                外壳防护等级</strong>
+                                                            <br> IP65
+                                                        </p>
+                                                        <p>
+                                                            <strong>
+                                                                工作温度</strong>
+                                                            <br> -25℃~50℃
+                                                        </p>
+                                                        <p>
+                                                            <strong>
+                                                                工作湿度</strong>
+                                                            <br>0 ～ 95%
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div id="c266" class="frame frame-default frame-type-textmedia frame-layout-0">
+                                            <a id="c636">
+                                            </a>
+                                            <div class="text-media row">
+                                                <div class="col-12 col-md-4 order-first">
+                                                </div>
+                                                <div class="col-12 pb-3 pb-md-0 ">
+                                                    <div class="ce-bodytext">
+
+                                                        <p>
+                                                            <strong>
+                                                                驱动方式</strong>
+                                                            <br> 四轮四驱
+                                                        </p>
+                                                        <p>
+                                                            <strong>
+                                                                最小转弯半径</strong>
+                                                            <br> 可原地旋转
+                                                        </p>
+                                                        <p>
+                                                            <strong>
+                                                                最大运行速度</strong>
+                                                            <br> 大于等于1 m/s
+                                                        </p>
+                                                        <p>
+                                                            <strong>
+                                                                重复定位精度</strong>
+                                                            <br> ±10 mm
+                                                        </p>
+                                                        <p>
+                                                            <strong>
+                                                                最大制动距离</strong>
+                                                            <br> 小于0.5 m
+                                                        </p>
+                                                        <p>
+                                                            <strong>
+                                                                最大爬坡角度</strong>
+                                                            <br> 15°
+                                                        </p>
+                                                        <p>
+                                                            &nbsp;</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <hr />
+                        <div id="c263" class="frame frame-default frame-type-textmedia frame-layout-0">
+                            <a id="c635">
+                            </a>
+                            <header>
+                                <h2 class="ce-headline ce-headline-design-11">
+                                    几何尺寸</h2>
+                            </header>
+                            <div class="text-media row">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-12 order-first">
+                                            <div class="ce-gallery" data-ce-columns="1" data-ce-images="1">
+                                                <div class="row justify-content-start">
+                                                    <div class="col-auto">
+                                                        <figure class="image">
+                                                            <!-- <a href="static/picture/dl300-dimensional-drawing.png" target="_blank" class="lightbox tet" rel="alternate">
+                                                                <img class="image-embed-item" src="static/picture/dl300-dimensional-drawing.png" width="600" height="226" alt="">
+                                                            </a> -->
+                                                            <a class="example-image-link" href="static/picture/dl300-dimensional-drawing.png" data-lightbox="example-2" data-title="电力巡检机器人（EPI300）-几何尺寸图">
+                                                                <img class="example-image" id="ii" src="static/picture/dl300-dimensional-drawing.png" width="700" height="226" alt="image-1" />
+                                                            </a>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <hr />
+                    </div>
+                    <div class="container">
+                        <div id="c1280" class="frame frame-default frame-type-header frame-layout-0">
+                            <a id="c1293">
+                            </a>
+                            <header>
+                                <h2 class="ce-headline ce-headline-design-11">
+                                    视频&图片 </h2>
+                            </header>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div id="c281" class="frame frame-default frame-type-textmedia frame-layout-0">
+                            <a id="c642">
+                            </a>
+                            <div class="text-media row">
+                                <div class="col-12 pb-3">
+                                    <div class="ce-bodytext">
+
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-12 order-first">
+                                            <div class="ce-gallery" data-ce-columns="1" data-ce-images="1">
+                                                <div class="row justify-content-start">
+                                                    <div class="col-auto">
+                                                        <figure class="video">
+                                                            <div class="video-embed">
+                                                                <video width="100%" height="100%" controls>
+                                                                    <source src="static/video/EPI-300.mp4" type="video/mp4">
+                                                                </video>
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="container">
+<div id="c282" class="frame frame-ruler-after frame-type-textmedia frame-layout-0">
+<a id="c643">
+</a>
+<div class="text-media row">
+<div class="col-12">
+<div class="row">
+<div class="col-12 order-first">
+<div class="ce-gallery" data-ce-columns="3" data-ce-images="3">
+<div class="row">
+<div class="col">
+<div class="gallery-slider">
+<div class="gallery-column">
+<figure class="image">
+<a href="./static/picture/dl300-1.jpg" target="_blank" class="lightbox tet" rel="alternate">
+<img class="image-embed-item" src="./static/picture/dl300-1.jpg" width="350" height="300" alt="">
+</a>
+</figure>
+</div>
+<div class="gallery-column">
+<figure class="image">
+<a href="./static/picture/dl300-2.jpg" target="_blank" class="lightbox tet" rel="alternate">
+<img class="image-embed-item" src="./static/picture/dl300-2.jpg" width="350" height="300" alt="">
+</a>
+</figure>
+</div>
+<div class="gallery-column">
+<figure class="image">
+<a href="./static/picture/dl300-3.jpg" target="_blank" class="lightbox tet" rel="alternate">
+<img class="image-embed-item" src="./static/picture/dl300-3.jpg" width="350" height="300" alt="">
+</a>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+ jQuery(document).ready(function () { initGallerySlider(3); }) </script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div> -->
+
+
+                    <!-- <div id="div1">
+                        <ul>
+                            <li>
+                                <a href="./static/picture/dl300-1.png" target="_blank" class="lightbox tet" rel="alternate">
+                                    <div class="im"><img src="./static/picture/dl300-1.png" /></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./static/picture/dl300-2.png" target="_blank" class="lightbox tet" rel="alternate">
+                                    <div class="im"><img src="./static/picture/dl300-2.png" /></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./static/picture/dl300-3.png" target="_blank" class="lightbox tet" rel="alternate">
+                                    <div class="im"><img src="./static/picture/dl300-3.png" /></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> -->
+                    <div class="demo">
+                        <div class="container">
+                            <!-- <a class="example-image-link" href="static/picture/ravelle-dimensional-drawing.png" data-lightbox="example-2" data-title="路威-几何尺寸图">
+                                <img class="example-image" src="static/picture/ravelle-dimensional-drawing.png" width="700" height="226" alt="image-1" />
+                            </a> -->
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="box">
+                                        <img src="static/pic/epi3003.png">
+                                        <div class="box-content">
+                                            <h3 class="title">电力巡检机器人（EPI300）</h3>
+                                            <span class="post">威猛的EPI300</span>
+                                        </div>
+                                        <ul class="icon">
+                                            <li><a class="example-image-link" href="static/pic/epi3003.png" data-lightbox="example-2" data-title="威猛的EPI300"><i class="fa fa-search"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="box">
+                                        <img src="static/pic/epi3002.png">
+                                        <div class="box-content">
+                                            <h3 class="title">电力巡检机器人（EPI300）</h3>
+                                            <span class="post">威猛的EPI300</span>
+                                        </div>
+                                        <ul class="icon">
+                                            <li><a class="example-image-link" href="static/pic/epi3002.png" data-lightbox="example-2" data-title="威猛的EPI300"><i class="fa fa-search"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="box">
+                                        <img src="static/pic/epi3001.png">
+                                        <div class="box-content">
+                                            <h3 class="title">电力巡检机器人（EPI300）</h3>
+                                            <span class="post">威猛的EPI300</span>
+                                        </div>
+                                        <ul class="icon">
+                                            <li><a class="example-image-link" href="static/pic/epi3001.png" data-lightbox="example-2" data-title="威猛的EPI300"><i class="fa fa-search"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </main>
+            </div>
+            <!-- 正文结束 -->
+
+            <!-- 底部开始 -->
+            <div id="bottomer"></div>
+            <script>
+                $("#bottomer").load("footer.html");
+            </script>
+            <script src="static/dist/js/lightbox-plus-jquery.min.js"></script>
+            <!-- 底部结束 -->
+        </div>
+    </div>
+</body>
+
+</html>

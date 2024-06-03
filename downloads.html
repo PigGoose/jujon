@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="巨匠机器人是业内领先的产品制造商和系统集成商，经营范围从移动机器人到多轴机械臂以及非标项目定制服务 。">
+    <meta name="keywords" content="巨匠机器人,ROS机器人,深圳巨匠机器人,人工智能,SLAM导航,机器学习,边缘计算,冷色调的夏天">
+    <meta charset="utf-8">
+
+    <title>巨匠机器人: 让做机器人变得简单！</title>
+    <link rel="shortcut icon" href="static/images/favicon.ico">
+    <link rel="bookmark" href="static/images/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="static/css/merged-9fc0b0e12fb1f1f64b50c67a7fe11615-min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="static/css/layout-default.css" media="all">
+    <link rel="stylesheet" type="text/css" href="static/css/news.css" media="all">
+    <link rel="stylesheet" type="text/css" href="static/css/product.css" media="all">
+    <link rel="stylesheet" type="text/css" href="static/css/merged-8f5790dcd0b4a57a051d054dc8d5f5cc-min.css" media="all">
+
+    <!-- <link rel="stylesheet" href="static/css/rss.css"> -->
+
+    <!-- CSS reset -->
+
+    <link rel="stylesheet" href="static/css/ss.css">
+    <style>
+        .btn {
+            width: 200px;
+            height: 30px;
+            /* background: #ccc; */
+            border: 2px solid #ff6e00;
+            border-radius: 15px;
+        }
+        
+        input {
+            outline-color: invert;
+            outline-style: none;
+            outline-width: 0px;
+            border: none;
+            border-style: none;
+            text-shadow: none;
+            -webkit-appearance: none;
+            -webkit-user-select: text;
+            outline-color: transparent;
+            box-shadow: none;
+        }
+        
+        .in {
+            height: 60px;
+            width: 100%;
+            background-color: #fc7169;
+        }
+    </style>
+    <!-- Resource style -->
+    <script src="static/js/info.js"></script>
+    <script src="static/js/modernizr.js"></script>
+    <!-- 头部js加载开始 -->
+    <script src="static/js/merged-fe0d10ae492542baa39791caf147e1d4-min.js" type="text/javascript"></script>
+    <script src="static/js/merged-a28fff5381f31f749fd1776d14dc6b9b-min.js" type="text/javascript"></script>
+    <script type="application/javascript" src="static/js/main.js" id="hPhSnUJah"></script>
+    <script type="application/javascript" src="static/js/uc-block.bundle.js"></script>
+    <script src="/static/js/jquery.js" type="text/javascript"></script>
+    <!-- Google Tag Manager -->
+    <script type="text/plain" data-usercentrics="Google Tag Manager">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-P5XVBM2');
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta name="robots" content="follow,index" />
+    <script>
+        function gaOptout() {
+            var disableStr = 'ga-disable-UA-34414288-2';
+            document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+            window[disableStr] = true;
+        }
+    </script>
+    <!-- Google Analytics -->
+    <!-- <script type="text/javascript">
+        window.onload = function() {
+            var fun = checkPwd; //引用checkPwd
+            fun();
+        };
+    </script> -->
+    <script type="text/plain" data-usercentrics="Google Analytics">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-34414288-2', 'auto'); ga('send', 'pageview'); </script>
+    <script src="/static/js/jquery.js" type="text/javascript"></script>
+
+    <!-- 头部js加载结束 -->
+</head>
+
+
+
+<body>
+    <div id="page--container">
+        <div id="page">
+            <!-- 导航开始 -->
+            <div id="navigation"></div>
+            <script>
+                $("#navigation").load("header.html");
+            </script>
+            <!-- 导航结束 -->
+
+            <!-- 面包屑开始 -->
+            <div class="menu-breadcrumb">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <ul class="menu-breadcrumb breadcrumbs">
+                                <li>
+                                    当前位置</li>
+                                <li>
+                                    <a href="downloads.html">
+                                        产品资料</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 面包屑结束 -->
+
+            <!-- 正文开始 -->
+            <div id="page--content">
+                <div class="page--header container-fluid ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-7">
+                                <h1>
+                                    产品资料</h1>
+                            </div>
+                            <div class="col-12 col-md-5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <main class="content-host">
+                    <div class="container">
+                        <div id="c961" class="frame frame-default frame-type-gridelements_pi1 frame-layout-0">
+                            <a id="c987">
+                            </a>
+                            <div class="ce-grid" data-grid-type="Container_50-50">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div id="c962" class="frame frame-default frame-type-textmedia frame-layout-0 frame-space-after-extra-small">
+                                            <a id="c981">
+                                            </a>
+                                            <div class="text-media row">
+                                                <div class="col-12 col-md-4 order-first">
+                                                </div>
+                                                <div class="col-12 ">
+                                                    <div class="ce-bodytext">
+                                                        <header>
+                                                            <h1 class="ce-headline">
+                                                                移动机器人 </h1>
+                                                        </header>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="c963" class="frame frame-default frame-type-uploads frame-layout-0 frame-space-after-extra-small">
+                                            <a id="c982">
+                                            </a>
+                                            <header>
+                                                <h2 class="ce-headline">
+                                                    路威（Ravelle）</h2>
+                                            </header>
+                                            <ul class="ce-uploads">
+                                                <li>
+                                                    <div>
+                                                        <a href="./static/pdf/lv_prod_man.pdf" title="路威（Ravelle）产品手册">
+                                                            <span class="ce-uploads-fileName">
+                                                                路威（Ravelle）产品手册</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="./static/pdf/ravelle_man.pdf" title="路威（Ravelle）用户手册">
+                                                            <span class="ce-uploads-fileName">
+                                                                路威（Ravelle）用户手册</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="./static/pdf/lv_experimental_guidance.pdf" title="路威（Ravelle）实验指导书">
+                                                            <span class="ce-uploads-fileName">
+                                                                路威（Ravelle）实验指导书</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="./static/pdf/lv_size_map.pdf" title="路威（Ravelle）几何尺寸">
+                                                            <span class="ce-uploads-fileName">
+                                                                路威（Ravelle）几何尺寸</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="./static/pdf/lv_material.pdf" title="路威（Ravelle）实物照片">
+                                                            <span class="ce-uploads-fileName">
+                                                                路威（Ravelle）实物照片</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="model/ravelle-model.html" title="路威（Ravelle）三维立体模型">
+                                                            <span class="ce-look-fileName">
+                                                                路威（Ravelle）三维立体模型</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div id="c963" class="frame frame-default frame-type-uploads frame-layout-0 frame-space-after-extra-small">
+                                            <a id="c982">
+                                            </a>
+                                            <header>
+                                                <h2 class="ce-headline">
+                                                    路驰（Landrose）</h2>
+                                            </header>
+                                            <ul class="ce-uploads">
+                                                <!-- <li>
+                                                    <div>
+                                                        <a href="javascript:;" title="路驰（Landrose）产品手册">
+                                                            <span class="ce-uploads-fileName">
+                                                                路驰（Landrose）产品手册</span>
+                                                        </a>
+                                                    </div>
+                                                </li> -->
+                                                <li>
+                                                    <div>
+                                                        <a href="./static/pdf/Landrose_man.pdf" title="路驰（Landrose）用户手册">
+                                                            <span class="ce-uploads-fileName">
+                                                                路驰（Landrose）用户手册</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="./static/pdf/lc_size_map.pdf" title="路驰（Landrose）几何尺寸">
+                                                            <span class="ce-uploads-fileName">
+                                                                路驰（Landrose）几何尺寸</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="./static/pdf/lc_material.pdf" title="路驰（Landrose）实物照片">
+                                                            <span class="ce-uploads-fileName">
+                                                                路驰（Landrose）实物照片</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="model/landrose-model.html" title="路驰（Landrose）三维立体模型">
+                                                            <span class="ce-look-fileName">
+                                                                路驰（Landrose）三维立体模型</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- <div id="c967" class="frame frame-default frame-type-uploads frame-layout-0 frame-space-after-extra-small">
+                                            <a id="c984">
+                                            </a>
+                                            <header>
+                                                <h2 class="ce-headline">
+                                                    路泽（Cruiser） </h2>
+                                            </header>
+                                            <ul class="ce-uploads">
+                                                <li>
+                                                    <div>
+                                                        <a href="./static/pdf/lv_prod_man.pdf" title="路泽（Cruiser）产品手册">
+                                                            <span class="ce-uploads-fileName">
+                                                                路泽（Cruiser）产品手册</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="javascript:;" title="路泽（Cruiser）用户手册">
+                                                            <span class="ce-uploads-fileName">
+                                                                路泽（Cruiser）用户手册</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="./static/pdf/lc_size_map.pdf" title="路泽（Cruiser）几何尺寸">
+                                                            <span class="ce-uploads-fileName">
+                                                                路泽（Cruiser）几何尺寸</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="./static/pdf/lc_material.pdf" title="路泽（Cruiser）实物照片">
+                                                            <span class="ce-uploads-fileName">
+                                                                路泽（Cruiser）实物照片</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="model/Roadhog-model.html" title="路泽（Cruiser）三维立体模型">
+                                                            <span class="ce-look-fileName">
+                                                                路泽（Cruiser）三维立体模型</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div> -->
+
+
+
+                                    </div>
+                                    <!-- <div class="col-12 col-md-6">
+                                        <div id="c964"
+                                            class="frame frame-default frame-type-textmedia frame-layout-0 frame-space-after-extra-small">
+                                            <a id="c978">
+                                            </a>
+                                            <div class="text-media row">
+                                                <div class="col-12 col-md-4 order-first">
+                                                </div>
+                                                <div class="col-12 ">
+                                                    <div class="ce-bodytext">
+                                                        <header>
+                                                            <h1 class="ce-headline">
+                                                                多轴机械臂 </h1>
+                                                        </header>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="c965"
+                                            class="frame frame-default frame-type-uploads frame-layout-0 frame-space-after-extra-small">
+                                            <a id="c979">
+                                            </a>
+                                            <header>
+                                                <h2 class="ce-headline">
+                                                    MMO-500 </h2>
+                                            </header>
+                                            <ul class="ce-uploads">
+                                                <li>
+                                                    <div>
+                                                        <a href="javascript:;" title="MMO-500-UR10-OperatingManual">
+                                                            <span class="ce-uploads-fileName">
+                                                                MMO-500-UR10-OperatingManual</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="javascript:;" title="MMO-500 Datasheet">
+                                                            <span class="ce-uploads-fileName">
+                                                                MMO-500 Datasheet</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div id="c970" class="frame frame-default frame-type-uploads frame-layout-0">
+                                            <a id="c980">
+                                            </a>
+                                            <header>
+                                                <h2 class="ce-headline">
+                                                    MMO-700 </h2>
+                                            </header>
+                                            <ul class="ce-uploads">
+                                                <li>
+                                                    <div>
+                                                        <a href="javascript:;" title="MMO-700-UR10-OperatingManual">
+                                                            <span class="ce-uploads-fileName">
+                                                                MMO-700-UR10-OperatingManual</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="javascript:;" title="MMO-700 Datasheet">
+                                                            <span class="ce-uploads-fileName">
+                                                                MMO-700 Datasheet</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div> -->
+
+                                    <div class="col-12 col-md-6">
+                                        <div id="c964" class="frame frame-default frame-type-textmedia frame-layout-0 frame-space-after-extra-small">
+                                            <a id="c978">
+                                            </a>
+                                            <div class="text-media row">
+                                                <div class="col-12 col-md-4 order-first">
+                                                </div>
+                                                <div class="col-12 ">
+                                                    <div class="ce-bodytext">
+                                                        <header>
+                                                            <h1 class="ce-headline">
+                                                                &nbsp;</h1>
+                                                        </header>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div id="c965" class="frame frame-default frame-type-uploads frame-layout-0 frame-space-after-extra-small">
+                                            <a id="c979">
+                                            </a>
+                                            <header>
+                                                <h2 class="ce-headline">
+                                                    复合机器人（MRF-150）</h2>
+                                            </header>
+                                            <ul class="ce-uploads">
+                                                <li>
+                                                    <div>
+                                                        <a href="./static/pdf/lv_prod_man.pdf" title="复合机器人（MRF-150）产品手册">
+                                                            <span class="ce-uploads-fileName">
+                                                                复合机器人（MRF-150）产品手册</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="javascript:;" title="复合机器人（MRF-150）用户手册">
+                                                            <span class="ce-uploads-fileName">
+                                                               复合机器人（MRF-150）用户手册
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="./static/pdf/lc_size_map.pdf" title="复合机器人（MRF-150）几何尺寸">
+                                                            <span class="ce-uploads-fileName">
+                                                                复合机器人（MRF-150）几何尺寸</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="./static/pdf/lc_material.pdf" title="复合机器人（MRF-150）实物照片">
+                                                            <span class="ce-uploads-fileName">
+                                                                复合机器人（MRF-150）实物照片</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="model/complex-150-model.html" title="复合机器人（MRF-150）三维立体模型">
+                                                            <span class="ce-look-fileName">
+                                                                复合机器人（MRF-150）三维立体模型</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div id="c970" class="frame frame-default frame-type-uploads frame-layout-0">
+                                            <a id="c980">
+                                            </a>
+                                            <header>
+                                                <h2 class="ce-headline">
+                                                    复合机器人（MRF-250） </h2>
+                                            </header>
+                                            <ul class="ce-uploads">
+                                                <li>
+                                                    <div>
+                                                        <a href="./static/pdf/lv_prod_man.pdf" title="复合机器人（MRF-250）产品手册">
+                                                            <span class="ce-uploads-fileName">
+                                                                复合机器人（MRF-250）产品手册</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="javascript:;" title="复合机器人（MRF-250）用户手册.pdf">
+                                                            <span class="ce-uploads-fileName">
+                                                                复合机器人（MRF-250）用户手册</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="./static/pdf/lc_size_map.pdf" title="复合机器人（MRF-250）几何尺寸">
+                                                            <span class="ce-uploads-fileName">
+                                                                复合机器人（MRF-250）几何尺寸</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="./static/pdf/lc_material.pdf" title="复合机器人（MRF-250）实物照片">
+                                                            <span class="ce-uploads-fileName">
+                                                                复合机器人（MRF-250）实物照片</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="model/complex-250-model.html" title="复合机器人（MRF-150）三维立体模型">
+                                                            <span class="ce-look-fileName">
+                                                                复合机器人（MRF-250）三维立体模型</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div id="c970" class="frame frame-default frame-type-uploads frame-layout-0">
+                                            <a id="c980">
+                                            </a>
+                                            <header>
+                                                <h2 class="ce-headline">
+                                                    复合机器人（MRF-500） </h2>
+                                            </header>
+                                            <ul class="ce-uploads">
+                                                <li>
+                                                    <div>
+                                                        <a href="./static/pdf/lv_prod_man.pdf" title="复合机器人（MRF-500）产品手册">
+                                                            <span class="ce-uploads-fileName">
+                                                                复合机器人（MRF-500）产品手册</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="javascript:;" title="复合机器人（MRF-500）用户手册">
+                                                            <span class="ce-uploads-fileName">
+                                                                复合机器人（MRF-500）用户手册</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="./static/pdf/lc_size_map.pdf" title="复合机器人（MRF-500）几何尺寸">
+                                                            <span class="ce-uploads-fileName">
+                                                                复合机器人（MRF-500）几何尺寸</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="./static/pdf/lc_material.pdf" title="复合机器人（MRF-500）实物照片">
+                                                            <span class="ce-uploads-fileName">
+                                                                复合机器人（MRF-500）实物照片</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="model/complex-500-model.html" title="复合机器人（MRF-500）三维立体模型">
+                                                            <span class="ce-look-fileName">
+                                                                复合机器人（MRF-500）三维立体模型</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div> -->
+
+                                        <div id="c966" class="frame frame-default frame-type-uploads frame-layout-0 frame-space-after-extra-small">
+                                            <a id="c983">
+                                            </a>
+                                            <header>
+                                                <h2 class="ce-headline">
+                                                    路虎（KOTF） </h2>
+                                            </header>
+                                            <ul class="ce-uploads">
+                                                <li>
+                                                    <div>
+                                                        <a href="./static/pdf/lh_prod_man.pdf" title="路虎（KOTF）产品手册">
+                                                            <span class="ce-uploads-fileName">
+                                                                路虎（KOTF）产品手册</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <!-- <li>
+                                                    <div>
+                                                        <a href="javascript:;" title="路虎（KOTF）用户手册">
+                                                            <span class="ce-uploads-fileName">
+                                                                路虎（KOTF）用户手册</span>
+                                                        </a>
+                                                    </div>
+                                                </li> -->
+                                                <li>
+                                                    <div>
+                                                        <a href="./static/pdf/lh_size_map.pdf" title="路虎（KOTF）几何尺寸">
+                                                            <span class="ce-uploads-fileName">
+                                                                路虎（KOTF）几何尺寸</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="./static/pdf/lh_material.pdf" title="路虎（KOTF）实物照片">
+                                                            <span class="ce-uploads-fileName">
+                                                                路虎（KOTF）实物照片</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="model/KOTF-model.html" title="路虎（KOTF）三维立体模型">
+                                                            <span class="ce-look-fileName">
+                                                                路虎（KOTF）三维立体模型</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div id="c967" class="frame frame-default frame-type-uploads frame-layout-0 frame-space-after-extra-small">
+                                            <a id="c984">
+                                            </a>
+                                            <header>
+                                                <h2 class="ce-headline">
+                                                    路泽（Cruiser） </h2>
+                                            </header>
+                                            <ul class="ce-uploads">
+                                                <!-- <li>
+                                                    <div>
+                                                        <a href="./static/pdf/lv_prod_man.pdf" title="路泽（Cruiser）产品手册">
+                                                            <span class="ce-uploads-fileName">
+                                                                路泽（Cruiser）产品手册</span>
+                                                        </a>
+                                                    </div>
+                                                </li> -->
+                                                <li>
+                                                    <div>
+                                                        <a href="./static/pdf/lz_material.pdf" title="路泽（Cruiser）用户手册">
+                                                            <span class="ce-uploads-fileName">
+                                                                路泽（Cruiser）用户手册</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="./static/pdf/lz_size_map.pdf" title="路泽（Cruiser）几何尺寸">
+                                                            <span class="ce-uploads-fileName">
+                                                                路泽（Cruiser）几何尺寸</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <!-- <li>
+                                                    <div>
+                                                        <a href="./static/pdf/lc_material.pdf" title="路泽（Cruiser）实物照片">
+                                                            <span class="ce-uploads-fileName">
+                                                                路泽（Cruiser）实物照片</span>
+                                                        </a>
+                                                    </div>
+                                                </li> -->
+                                                <li>
+                                                    <div>
+                                                        <a href="model/dindon-model.html" title="路泽（Cruiser）三维立体模型">
+                                                            <span class="ce-look-fileName">
+                                                                路泽（Cruiser）三维立体模型</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div id="c974" class="frame frame-default frame-type-div frame-layout-0">
+                            <a id="c995">
+                            </a>
+                            <hr class="ce-div">
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div id="c901" class="frame frame-default frame-type-header frame-layout-0">
+                            <a id="c959">
+                            </a>
+                            <header>
+                                <h1 class="ce-headline">
+                                    其他资料 </h1>
+                            </header>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div id="c142" class="frame frame-default frame-type-textmedia frame-layout-0">
+                            <a id="c587">
+                            </a>
+                            <div class="text-media row">
+                                <div class="col-12 col-md-4 order-first">
+                                </div>
+                                <div class="col-12 pb-3 pb-md-0 ">
+                                    <div class="ce-bodytext">
+                                        <header>
+                                            <h2 class="ce-headline">
+                                                ROS学习 </h2>
+                                        </header>
+                                        <p class="bodytext">
+                                            其他学习资料 <a class="cd-popup-trigger" href="#" title="Visit our GitHub-Seite" target="_blank">
+                                                下载</a>。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cd-popup" role="alert">
+                        <div class="cd-popup-container">
+                            <div style="margin-top: 10px;">
+                                <p>请输入淘宝店铺中获取到的提取码</p>
+                            </div>
+                            <form>
+                                <div style="margin-bottom: 10px;">
+                                    <input class="btn" type="text" id="passwd" onblur="checkPwd()" required="required" />
+                                </div>
+
+                                <ul class="cd-buttons">
+
+                                    <li>
+                                        <a><input class="in" type="submit" value="提交" /></a>
+                                    </li>
+                                    <!-- <input type="submit" value="提交" /> -->
+                                    <li>
+                                        <a href="./downloads.html">取消</a>
+                                    </li>
+                                </ul>
+                                <!-- <a href="#" class="cd-popup-close img-replace">Close</a> -->
+                            </form>
+                        </div>
+                        <!-- cd-popup-container -->
+                    </div>
+
+                    <!-- <div class="container">
+                        <div id="c976" class="frame frame-default frame-type-uploads frame-layout-0">
+                            <a id="c991">
+                            </a>
+                            <header>
+                                <h2 class="ce-headline">
+                                    GTC </h2>
+                            </header>
+                            <ul class="ce-uploads">
+                                <li>
+                                    <div>
+                                        <a href="javascript:;" title="GTC English">
+                                            <span class="ce-uploads-fileName">
+                                                GTC English</span>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div id="c977" class="frame frame-default frame-type-uploads frame-layout-0">
+                            <a id="c992">
+                            </a>
+                            <header>
+                                <h2 class="ce-headline">
+                                    How To Find Us </h2>
+                            </header>
+                            <ul class="ce-uploads">
+                                <li>
+                                    <div>
+                                        <a href="javascript:;" title="Parking">
+                                            <span class="ce-uploads-fileName">
+                                                Parking</span>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> -->
+                </main>
+            </div>
+            <!-- 正文结束 -->
+
+
+            <!-- 底部开始 -->
+            <div id="bottomer"></div>
+            <script>
+                $("#bottomer").load("footer.html");
+            </script>
+            <!-- 底部结束 -->
+            <script src="static/js/jquery.1.11.1.js"></script>
+
+            <script src="static/js/ss.js"></script>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

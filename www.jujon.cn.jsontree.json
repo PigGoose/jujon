@@ -1,0 +1,248 @@
+var site_tree_node = {
+  "url": "https://www.jujon.cn/",
+  "incount": "1",
+  "outcount": "8",
+  "title": "JUJON...",
+  "childs": [
+  {
+    "url": "https://www.jujon.cn/index.html",
+    "incount": "6",
+    "outcount": "8",
+    "title": "JUJON...",
+    "childs": [
+        ]
+  }
+  ,{
+    "url": "https://www.jujon.cn/mobile-robots.html",
+    "incount": "25",
+    "outcount": "14",
+    "title": "JUJON...",
+    "childs": [
+    {
+      "url": "https://www.jujon.cn/ravelle.html",
+      "incount": "4",
+      "outcount": "4",
+      "title": "JUJON...",
+      "childs": [
+      {
+        "url": "https://www.jujon.cn/static/pdf/路威用户手册.pdf",
+        "incount": "1",
+        "outcount": "0",
+        "title": "null",
+        "childs": [
+                ]
+      }
+      ]
+    }
+    ,{
+      "url": "https://www.jujon.cn/landrose.html",
+      "incount": "2",
+      "outcount": "2",
+      "title": "JUJON...",
+      "childs": [
+            ]
+    }
+    ,{
+      "url": "https://www.jujon.cn/KOTF.html",
+      "incount": "2",
+      "outcount": "2",
+      "title": "JUJON...",
+      "childs": [
+            ]
+    }
+    ,{
+      "url": "https://www.jujon.cn/hercules.html",
+      "incount": "5",
+      "outcount": "3",
+      "title": "JUJON...",
+      "childs": [
+            ]
+    }
+    ,{
+      "url": "https://www.jujon.cn/Roadhog.html",
+      "incount": "2",
+      "outcount": "3",
+      "title": "JUJON...",
+      "childs": [
+            ]
+    }
+    ,{
+      "url": "https://www.jujon.cn/dindon.html",
+      "incount": "2",
+      "outcount": "3",
+      "title": "JUJON...",
+      "childs": [
+            ]
+    }
+    ]
+  }
+  ,{
+    "url": "https://www.jujon.cn/application-epi-robots.html",
+    "incount": "18",
+    "outcount": "12",
+    "title": "JUJON...",
+    "childs": [
+    {
+      "url": "https://www.jujon.cn/dl200.html",
+      "incount": "3",
+      "outcount": "3",
+      "title": "JUJON...",
+      "childs": [
+            ]
+    }
+    ,{
+      "url": "https://www.jujon.cn/dl300.html",
+      "incount": "3",
+      "outcount": "3",
+      "title": "JUJON...",
+      "childs": [
+            ]
+    }
+    ,{
+      "url": "https://www.jujon.cn/dl500.html",
+      "incount": "3",
+      "outcount": "3",
+      "title": "JUJON...",
+      "childs": [
+            ]
+    }
+    ,{
+      "url": "https://www.jujon.cn/dl800.html",
+      "incount": "3",
+      "outcount": "3",
+      "title": "JUJON...",
+      "childs": [
+            ]
+    }
+    ]
+  }
+  ,{
+    "url": "https://www.jujon.cn/other-robots.html",
+    "incount": "13",
+    "outcount": "28",
+    "title": "JUJON...",
+    "childs": [
+    {
+      "url": "https://www.jujon.cn/omr-b.html",
+      "incount": "3",
+      "outcount": "3",
+      "title": "JUJON...",
+      "childs": [
+            ]
+    }
+    ,{
+      "url": "https://www.jujon.cn/other-robots-oa.html",
+      "incount": "3",
+      "outcount": "3",
+      "title": "JUJON...",
+      "childs": [
+            ]
+    }
+    ,{
+      "url": "https://www.jujon.cn/other-robots-ob.html",
+      "incount": "3",
+      "outcount": "3",
+      "title": "JUJON...",
+      "childs": [
+            ]
+    }
+    ,{
+      "url": "https://www.jujon.cn/other-robots-oc.html",
+      "incount": "3",
+      "outcount": "4",
+      "title": "JUJON...",
+      "childs": [
+      {
+        "url": "https://www.jujon.cn/static/picture/other/other-c-2.jpgg",
+        "incount": "1",
+        "outcount": "0",
+        "title": "null",
+        "childs": [
+                ]
+      }
+      ]
+    }
+    ,{
+      "url": "https://www.jujon.cn/other-robots-ot.html",
+      "incount": "3",
+      "outcount": "3",
+      "title": "JUJON...",
+      "childs": [
+            ]
+    }
+    ,{
+      "url": "https://www.jujon.cn/omr-i.html",
+      "incount": "3",
+      "outcount": "3",
+      "title": "JUJON...",
+      "childs": [
+            ]
+    }
+    ,{
+      "url": "https://www.jujon.cn/omr-w.html",
+      "incount": "3",
+      "outcount": "3",
+      "title": "JUJON...",
+      "childs": [
+            ]
+    }
+    ,{
+      "url": "https://www.jujon.cn/mr-1.html",
+      "incount": "3",
+      "outcount": "3",
+      "title": "JUJON...",
+      "childs": [
+            ]
+    }
+    ,{
+      "url": "https://www.jujon.cn/mr-3.html",
+      "incount": "3",
+      "outcount": "3",
+      "title": "JUJON...",
+      "childs": [
+            ]
+    }
+    ,{
+      "url": "https://www.jujon.cn/mr-4.html",
+      "incount": "3",
+      "outcount": "3",
+      "title": "JUJON...",
+      "childs": [
+            ]
+    }
+    ,{
+      "url": "https://www.jujon.cn/mr-2.html",
+      "incount": "3",
+      "outcount": "3",
+      "title": "JUJON...",
+      "childs": [
+            ]
+    }
+    ,{
+      "url": "https://www.jujon.cn/other-robots-ff.html",
+      "incount": "3",
+      "outcount": "3",
+      "title": "JUJON...",
+      "childs": [
+            ]
+    }
+    ,{
+      "url": "https://www.jujon.cn/other-robots-fi.html",
+      "incount": "3",
+      "outcount": "3",
+      "title": "JUJON...",
+      "childs": [
+            ]
+    }
+    ]
+  }
+  ,{
+    "url": "https://www.jujon.cn/index-ie.html",
+    "incount": "8",
+    "outcount": "1",
+    "title": "JUJON...",
+    "childs": [
+        ]
+  }
+  ]
+}
