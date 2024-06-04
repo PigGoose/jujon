@@ -1,0 +1,1 @@
+function initGallerySlider(slidesToShow){jQuery(".gallery-slider").slick({arrows:!0,slidesToScroll:1,slidesToShow:slidesToShow,autoplay:!0,prevArrow:'<button type="button" class="slick-prev"></button>',nextArrow:'<button type="button" class="slick-next"></button>'})}
