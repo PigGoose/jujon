@@ -1,0 +1,277 @@
+/* ### Menu ### */
+
+
+/* ## Main ## */
+
+
+/* ### General ### */
+
+
+/* ### Layouts */
+
+
+/* ### Menu ### */
+
+
+/* ## Main ## */
+
+
+/* ### Spacing ### */
+
+.productconfigurator--option {
+    border: 2px solid #006699;
+    padding: 0 10px;
+    position: relative;
+}
+
+@media (min-width: 992px) {
+    .productconfigurator--option {
+        height: 80px;
+    }
+}
+
+.productconfigurator--option.disabled:hover {
+    cursor: not-allowed;
+}
+
+.productconfigurator--option.disabled:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.productconfigurator--option.disabled .productconfigurator--option__checkbox:hover input~.checkmark {
+    background-color: #fff;
+    cursor: not-allowed;
+}
+
+.productconfigurator--option__title {
+    color: #006699;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.productconfigurator--option__description {
+    color: #6c6c6c;
+}
+
+.productconfigurator--option__description-default:hover {
+    cursor: pointer;
+}
+
+.productconfigurator--option__description-default:after {
+    content: '\f05a';
+    color: #006699;
+    font-family: "FontAwesome - hotbytes", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji, sans-serif;
+}
+
+.productconfigurator--option__static {
+    color: #6c6c6c;
+    border-bottom: 1px solid #6c6c6c;
+    min-width: 230px;
+    padding-bottom: 3px;
+}
+
+.productconfigurator--option__tooltip {
+    display: none;
+    position: absolute;
+    left: -12px;
+    background: white;
+    border: 2px solid #006699;
+    top: -12px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: auto;
+    min-height: 112px;
+    max-width: 600px;
+    z-index: 2;
+}
+
+@media (max-width: 767.98px) {
+    .productconfigurator--option__tooltip {
+        width: auto;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .productconfigurator--option__tooltip {
+        width: 600px;
+    }
+}
+
+@media (min-width: 992px) {
+    .productconfigurator--option__tooltip {
+        min-height: 106px;
+        top: 0;
+    }
+}
+
+.productconfigurator--option__tooltip-text {
+    padding: 15px 40px 15px 15px;
+}
+
+.productconfigurator--option__tooltip-close {
+    position: absolute;
+    right: -2px;
+    top: -2px;
+    width: 40px;
+    height: 40px;
+    padding: 9px;
+    background: #006699;
+}
+
+.productconfigurator--option__tooltip-close:hover {
+    cursor: pointer;
+}
+
+.productconfigurator--option__tooltip-close:before,
+.productconfigurator--option__tooltip-close:after {
+    position: absolute;
+    left: 19px;
+    content: ' ';
+    height: 24px;
+    width: 2px;
+    background-color: #fff;
+}
+
+.productconfigurator--option__tooltip-close:before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.productconfigurator--option__tooltip-close:after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.productconfigurator--option__select {
+    border: none;
+    border-bottom: 1px solid #6c6c6c;
+    border-radius: 0;
+    background: none;
+    color: #6c6c6c;
+    -webkit-appearance: none;
+    font-weight: lighter;
+    padding-right: 55px;
+    padding-bottom: 3px;
+    width: 100%;
+    margin: 5px 0;
+}
+
+@media (min-width: 992px) {
+    .productconfigurator--option__select {
+        width: auto;
+        margin: 0;
+    }
+}
+
+.productconfigurator--option__select::-moz-selection {
+    color: #6c6c6c;
+}
+
+.productconfigurator--option__select::selection {
+    color: #6c6c6c;
+}
+
+.productconfigurator--option__select-wrapper {
+    position: relative;
+}
+
+.productconfigurator--option__select-wrapper:after {
+    content: '';
+    width: 9px;
+    height: 9px;
+    border-top: 1px solid #6c6c6c;
+    border-right: 1px solid #6c6c6c;
+    display: inline-block;
+    -webkit-transform: translate(-50%, -50%) rotate(135deg);
+    -ms-transform: translate(-50%, -50%) rotate(135deg);
+    transform: translate(-50%, -50%) rotate(135deg);
+    top: 42%;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.productconfigurator--option__checkbox {
+    display: block;
+    position: relative;
+    margin: 0 !important;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.productconfigurator--option__checkbox-wrapper {
+    float: right;
+    width: 25px;
+}
+
+.productconfigurator--option__checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.productconfigurator--option__checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 2px solid #006699;
+    border-radius: 6px;
+}
+
+.productconfigurator--option__checkbox:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.productconfigurator--option__checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.productconfigurator--option__checkbox input:checked~.checkmark:after {
+    display: block;
+}
+
+.productconfigurator--option__checkbox .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 7px;
+    height: 13px;
+    border: solid #2699fb;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.productconfigurator--option__flatline {
+    width: 25px;
+    float: right;
+    background: #006699;
+    height: 2px;
+}
+
+.frame-type-form_formframework textarea[id$="notes"] {
+    height: 315px;
+}

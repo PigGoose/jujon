@@ -1,2 +1,3 @@
 *.mp4
-static/*
+static/video
+static/stl

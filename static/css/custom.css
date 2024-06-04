@@ -1,0 +1,7 @@
+#com-atlassian-confluence .page-metadata .author {
+    display: none;
+}
+
+#com-atlassian-confluence .page-metadata {
+    display: none;
+}
